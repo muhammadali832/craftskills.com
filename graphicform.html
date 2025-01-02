@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="serviceform.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="service">Choose Your Service</label>
+            <select id="service" name="service" required>
+                <option place disabled>Select Service</option placeholder= "Select Services">
+                <option value="SEO">Logo Design</option>
+                <option value="Social Media Marketing">Business Card Design</option>
+                <option value="Search Engine Marketing">Flyer & Brochure Design</option>
+                <option value="Ads Design">Banner & Poster Design</option>
+                <option value="Facebook & Instagram Ads">Event & Invitation Design</option>
+                <option value="Google Ads">Packaging Box Design</option>
+                <option value="YouTube Ads">Book Cover Design</option>
+                <option value="YouTube Ads">Motion Graphics & Animation</option>
+
+            </select>
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="message">Add Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+        
+  <div class="contact-section">
+    <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p>Contact us</p>
+        <ul>
+            <li><i class="icon skype"></i> Email: aliejaz1656@gmail.com</li>
+            <li><i class="icon whatsapp"></i> WhatsApp: +923109065069</li>
+        </ul>
+    </div>
+    <div class="contact-form">
+        <h3>Contact Form</h3>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email *" required>
+            <textarea placeholder="Message *" required></textarea>
+            <button type="submit">SEND</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <p>&COPY; Craft Skills have all right reserved 2024</p>
+    <script>
+        // Automatically update the year
+        const yearSpan = document.getElementById("current-year");
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
+    </script>
+</footer>
+
+    <script src="serviceform.js"></script>
+</body>
+</html>

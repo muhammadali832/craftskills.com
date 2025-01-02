@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="serviceform.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="service">Choose Your Service</label>
+            <select id="service" name="service" required>
+                <option place disabled>Select Service</option placeholder= "Select Services">
+                <option value="SEO">Custom Shopify Store Design</option>
+                <option value="Social Media Marketing">Shopify Store Setup & Configuration</option>
+                <option value="Search Engine Marketing">Shopify App Integration</option>
+                <option value="Ads Design">Speed & Performance Optimization</option>
+                <option value="Facebook & Instagram Ads">Custom Shopify App Development</option>
+                <option value="Google Ads">Product Listing & Management</option>
+                <option value="YouTube Ads">Shipping & Delivery Integration</option>
+            </select>
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="message">Add Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="serviceform.js"></script>
+</body>
+</html>

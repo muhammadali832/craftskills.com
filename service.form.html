@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="serviceform.css">
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="service">Choose Your Service</label>
+            <select id="service" name="service" required>
+                <option place disabled>Select Service</option placeholder= "Select Services">
+                <option value="SEO">SEO</option>
+                <option value="Social Media Marketing">Social Media Marketing</option>
+                <option value="Search Engine Marketing">Search Engine Marketing</option>
+                <option value="Ads Design">Ads Design</option>
+                <option value="Facebook & Instagram Ads">Facebook & Instagram Ads</option>
+                <option value="Google Ads">Google Ads</option>
+                <option value="YouTube Ads">YouTube Ads</option>
+            </select>
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="message">Add Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+
+
+
+    <script src="serviceform.js"></script>
+</body>
+</html>

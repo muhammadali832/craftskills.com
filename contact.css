@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0056b3; /* Dark blue background for body */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligning items to the top of the screen */
+    min-height: 100vh;
+    padding-top: 0; /* Removed space for fixed menu bar */
+}
+
+/* Menu Bar Styling */
+.manu-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed; /* Fixed menu bar to top */
+    top: 0; /* Align menu bar to the top */
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.manu-bar img {
+    height: auto;
+    max-width: 100%;
+    width: 200px;
+    object-fit: contain;
+}
+
+/* Tablet-specific adjustments */
+@media screen and (max-width: 1024px) {
+    .manu-bar img {
+      width: 180px;
+    }
+}
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 768px) {
+    .manu-bar img {
+      width: 150px;
+    }
+}
+
+/* Navigation Styling */
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.list {
+    text-decoration: none;
+    color: darkblue;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.list:hover {
+    background-color: rgb(25, 0, 255);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Menu Toggle Button for Mobile */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: darkblue;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Navigation Menu */
+@media screen and (max-width: 768px) {
+    .nav-list {
+      display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      flex-direction: column;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list.active {
+      display: flex;
+    }
+
+    .list {
+      margin: 15px 0;
+    }
+
+    .menu-toggle {
+      display: flex;
+    }
+}
+
+/* Service Button Styling */
+.ser-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.se-b {
+    width: 200px;
+    height: 50px;
+    background-color: #1d4ed8;
+    color: white;
+    border: solid white;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.se-b:hover {
+    background-color: blue;
+}
+
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contact-container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input, select, textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        padding: 15px;
+    }
+
+    input, textarea {
+        font-size: 0.9rem;
+    }
+}
+

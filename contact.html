@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="manu-bar">
+        <a href="home.html">  <img src="mmain.png" alt="Logo" class="logo-img">
+        </a>
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-list">
+            <li><a href="home.html" class="list">Home</a></li>
+            <li><a href="about.html" class="list">About</a></li>
+            <li><a href="service.html" class="list">Services</a></li>
+            <li><a href="contact.html" class="list">Contact</a></li>
+        </ul>
+    </div><br>
+
+
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="service">Choose Your Service</label>
+            <select id="service" name="service" required>
+                <option place disabled>Select Service</option placeholder= "Select Services">
+                <option value="SEO">Digital Marketing</option>
+                <option value="Social Media Marketing">Front-End Development</option>
+                <option value="Search Engine Marketing">Shopify</option>
+                <option value="Ads Design">Graphic Desighning</option>
+            </select>
+
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="number" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="message">Add Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script src="contact.js"></script>
+</body>
+</html>
